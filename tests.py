@@ -23,5 +23,6 @@ class TestBooksCollector:
     # напиши свои тесты ниже
     # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
     def test_set_book_rating_5(self):
-        avergens = BooksCollector()
-        avergens.get_books_rating('avengers', 5)
+        collector = BooksCollector()
+        collector.get_books_rating('avengers', 5)
+        assert books_rating['avengers'] == 5
