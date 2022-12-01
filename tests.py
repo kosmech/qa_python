@@ -22,7 +22,14 @@ class TestBooksCollector:
 
     # напиши свои тесты ниже
     # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
-    def test_set_book_rating_5(self):
+    def test_set_book_rating_set_5(self):
         collector = BooksCollector()
-        collector.get_books_rating('avengers', 5)
-        assert books_rating['avengers'] == 5
+        collector.add_new_book('Зомби')
+        collector.set_book_rating('Зомби', 5)
+        assert collector.get_book_rating('Зомби') == 5
+    def test_get_book_rating_1(self):
+        collector = BooksCollector()
+        collector.add_new_book('Зомби')
+        collector.add_new_book('Что делать, если ваш кот хочет вас убить')
+        assert collector.get_book_rating('Зомби') == 1
+
