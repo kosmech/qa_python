@@ -11,7 +11,7 @@ test_set_book_rating_new_value_not_in_range_1_to_10_not_set_new_rating
 test_get_book_rating_name_book_shows_rating_1
 # тест6 на вывод списка с определённым рейтингом
 test_get_books_with_specific_rating_value_in_range_1_to_10_show_list
-# тест7 на вывод путого списка при запросе рейтинга 11
+# тест7 на вывод пуcтого списка при запросе рейтинга 11
 test_get_books_with_specific_rating_value_not_in_range_1_to_10_show_empty_list
 # тест8 на получение всего словаря с книгами и рейтингом
 test_get_books_rating_show_dict
