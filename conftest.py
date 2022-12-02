@@ -1,5 +1,6 @@
 import pytest
 from main import BooksCollector
+
 @pytest.fixture()
 def collector_with_book():
     collector = BooksCollector()
