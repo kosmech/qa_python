@@ -1,1 +1,25 @@
 # qa_python
+# тест1 на добавление двух книг
+test_add_new_book_two_books_added_books
+# тест2 на добавление уже добавленной ранее книги
+test_add_new_book_existing_book_not_added
+# тест3 на установку рейтинга добавленной книги
+test_set_book_rating_new_value_in_range_1_to_10_set_new_rating
+# тест4 на установку рейтинга выше 10
+test_set_book_rating_new_value_not_in_range_1_to_10_not_set_new_rating
+# тест5 на проверку стандартного рейтинга добавленной книги
+test_get_book_rating_name_book_shows_rating_1
+# тест6 на вывод списка с определённым рейтингом
+test_get_books_with_specific_rating_value_in_range_1_to_10_show_list
+# тест7 на вывод пуcтого списка при запросе рейтинга 11
+test_get_books_with_specific_rating_value_not_in_range_1_to_10_show_empty_list
+# тест8 на получение всего словаря с книгами и рейтингом
+test_get_books_rating_show_dict
+# тест9 добавление книги в избранное из добавленных раньше
+test_add_book_in_favorites_book_from_books_rating_add_book_in_favorites
+# тест10 добавление новой книги сразу в избранное
+test_add_book_in_favorites_book_not_from_books_rating_not_add_book_in_favorites
+# тест11 на удаление книги из избранного
+test_delete_book_from_favorites_book_from_favorites_book_not_in_favorites
+# тест12 на получение списка избранных книг
+test_get_list_of_favorites_books_show_list
