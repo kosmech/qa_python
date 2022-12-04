@@ -32,7 +32,7 @@ class TestBooksCollector:
         collector_with_book.set_book_rating('Мисс говядина', 9)
         assert collector_with_book.get_books_with_specific_rating(9) == ['Доширак - лучший выбор!', 'Мисс говядина']
 
-    # тест на вывод путого списка при запросе рейтинга 11
+    # тест на вывод пуcтого списка при запросе рейтинга 11
     def test_get_books_with_specific_rating_value_not_in_range_1_to_10_show_empty_list(self, collector_with_book):
         collector_with_book.add_new_book('Доширак - лучший выбор!')
         collector_with_book.set_book_rating('Доширак - лучший выбор!', 9)
@@ -65,5 +65,10 @@ class TestBooksCollector:
         collector_with_book.add_book_in_favorites('Терминатор Кроль: Восстание морковок')
         collector_with_book.delete_book_from_favorites('Терминатор Кроль: Восстание морковок')
         assert collector_with_book.get_list_of_favorites_books() == []
+
+    # тест на получение списка избранных книг
+    def test_get_list_of_favorites_books_show_list(self, collector_with_book):
+        collector_with_book.add_book_in_favorites('Книга')
+        assert collector_with_book.get_list_of_favorites_books() == ['Книга']
 
 
